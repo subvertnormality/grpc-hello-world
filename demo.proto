@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package demo;
+
+service Demo {
+    rpc sayText(Text) returns (Text) {};
+}
+
+message Text {
+    string text = 1;
+}
